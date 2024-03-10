@@ -2,7 +2,8 @@ import re
 import time
 from typing import Union, Optional
 
-import bcrypt
+from passlib.hash import bcrypt
+
 from bson import ObjectId
 
 from backend.controllers.token_handler import TokenHandler
@@ -21,7 +22,7 @@ class UserModel:
         return {
             "name": self.name,
             "email": self.email,
-            "password": bcrypt.hashpw(self.password.encode('utf-8'), bcrypt.gensalt()).decode(),
+            "password": bcrypt.hash(self.password),
             "role": self.role,
             "created_at": self.created_at
         }
@@ -53,7 +54,7 @@ class UserModel:
         if not email or not password:
             return {"message": "provide_correct_email_and_password"}, 400
         user = MongoDB.users.find_one({"email": email})
-        if user and UserValidator.pass_matched(password, user["password"]):
+        if user and bcrypt.verify(password, user["password"]):
             return UserModel._format_response(user), 200
         else:
             return {"message": "invalid_credentials"}, 401
@@ -83,11 +84,10 @@ class UserModel:
         if not user:
             return "failed_to_load_user"
 
-        if UserValidator.pass_matched(old_pass, user["password"]):
-            print(type(new_pass), new_pass)
+        if bcrypt.verify(old_pass, user["password"]):
             update_result = MongoDB.users.update_one(
                 {"_id": ObjectId(user_id)},
-                {"$set": {"password": bcrypt.hashpw(new_pass.encode('utf-8'), bcrypt.gensalt()).decode()}}
+                {"$set": {"password": bcrypt.hash(new_pass)}}
             )
             print(update_result.modified_count)
             if update_result.modified_count != 1:
@@ -132,10 +132,6 @@ class UserValidator:
         if pass_len > 30:
             return "password_is_too_long"
         return None
-
-    @staticmethod
-    def pass_matched(plain_pass: str, hashed_pass: str) -> bool:
-        return bcrypt.checkpw(plain_pass.encode('utf-8'), hashed_pass.encode('utf-8'))
 
     @staticmethod
     def valid_all(user_model: UserModel):
