@@ -28,7 +28,8 @@ def run_server() -> None:
 
     if connection_succeed:
         register_routes()
-        app.run(port=3000)
+        app.run(port=10000, host='0.0.0.0')
+        print("running on port 10000")
 
 
 if __name__ == "__main__":
