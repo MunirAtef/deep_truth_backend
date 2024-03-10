@@ -1,0 +1,5 @@
+time: 1709921251.5643375
+request: POST http://localhost:3000/auth/signup
+exception: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+exception_type: <class 'werkzeug.exceptions.BadRequest'>
+============================================================
