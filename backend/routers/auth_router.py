@@ -18,13 +18,3 @@ def signup_with_email():
 @auth_blueprint.post("refresh_access_token")
 def refresh_access_token():
     return TokenHandler.verify_refresh_token()
-
-@auth_blueprint.post("update_name")
-@TokenHandler.verify_access_token
-def update_name(user_id: str):
-    return AuthController.patch_name(user_id)
-
-@auth_blueprint.post("update_password")
-@TokenHandler.verify_access_token
-def update_password(user_id: str):
-    return AuthController.patch_password(user_id)

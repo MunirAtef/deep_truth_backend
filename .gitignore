@@ -1,0 +1,3 @@
+backend/file_repository/
+**/__pycache__/
+deep_fake_model/temp_faces/

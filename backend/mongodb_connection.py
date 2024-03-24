@@ -12,6 +12,7 @@ class MongoDB:
     _db: Optional[Database] = None
     users = None
     history = None
+    connections = None
 
     @staticmethod
     def mongo_dp_connect() -> bool:
@@ -20,6 +21,8 @@ class MongoDB:
         try:
             load_dotenv()
 
+            # "mongodb://127.0.0.1:27017/DeepTruthDB"
+            # os.getenv('MONGO_URI')
             client = MongoClient(os.getenv('MONGO_URI'), server_api=ServerApi('1'))
             try:
                 client.admin.command('ping')
@@ -31,6 +34,7 @@ class MongoDB:
             MongoDB._db = client.get_database("DeepTruthDB")
             MongoDB.users = MongoDB._db.users
             MongoDB.history = MongoDB._db.history
+            MongoDB.connections = MongoDB._db.connections
             return True
         except RuntimeError:
             print("Exception in connecting with db")

@@ -9,11 +9,12 @@ from deep_fake_model.deep_fake_images import is_fake
 
 
 class FaceCropper:
-    def __init__(self, image_bytes: bytes, temp_dir):
+    def __init__(self, image_bytes: bytes, temp_dir, file_th: str):
         self.image_array = cv2.imdecode(np.frombuffer(image_bytes, np.uint8), cv2.IMREAD_COLOR)
         self.width = len(self.image_array[0])
         self.height = len(self.image_array)
-		
+        self.file_th = file_th
+
         self.temp_dir = temp_dir
         self.faces = self.get_faces()
 
@@ -41,7 +42,7 @@ class FaceCropper:
 
             faces.append({
                 "position": self.normalize_face(face),
-                "type": "fake" if is_fake(face_path) else "real"
+                "type": "fake" if is_fake(face_path, self.file_th) else "real"
             })
             os.remove(face_path)
 

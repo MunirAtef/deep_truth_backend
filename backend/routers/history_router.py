@@ -3,7 +3,7 @@ from flask import Blueprint
 from backend.controllers.token_handler import TokenHandler
 from backend.controllers.history_controller import HistoryController
 
-history_blueprint = Blueprint('files_history', __name__)
+history_blueprint = Blueprint('history', __name__)
 
 
 @history_blueprint.get("/history_data")

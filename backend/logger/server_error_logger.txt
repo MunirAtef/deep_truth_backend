@@ -3,3 +3,228 @@ request: POST http://localhost:3000/auth/signup
 exception: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
 exception_type: <class 'werkzeug.exceptions.BadRequest'>
 ============================================================
+time: 1710106410.7561338
+request: POST http://192.168.1.7:10000/auth/signup
+exception: SSL handshake failed: ac-bxg1mau-shard-00-00.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-bxg1mau-shard-00-02.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-bxg1mau-shard-00-01.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 65ee269b325c31ad0a7bcf77, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-bxg1mau-shard-00-00.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-00.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-bxg1mau-shard-00-01.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-01.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-bxg1mau-shard-00-02.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-02.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+exception_type: <class 'pymongo.errors.ServerSelectionTimeoutError'>
+============================================================
+time: 1710115748.1646981
+request: POST http://localhost:10000/auth/signup
+exception: SSL handshake failed: ac-bxg1mau-shard-00-01.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-bxg1mau-shard-00-02.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-bxg1mau-shard-00-00.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 65ee4b2d4b1be8b882656e1c, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-bxg1mau-shard-00-00.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-00.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-bxg1mau-shard-00-01.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-01.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-bxg1mau-shard-00-02.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-02.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+exception_type: <class 'pymongo.errors.ServerSelectionTimeoutError'>
+============================================================
+time: 1710135190.4371352
+request: POST http://localhost:3000/profile/update_picture
+exception: [Errno 13] Permission denied: 'D:/grad_project/grad_pr/backend/file_repository/profile_pictures/65ee7657cfa8ab3a1a87a4ef.jpg'
+exception_type: <class 'PermissionError'>
+============================================================
+time: 1710136112.6226668
+request: POST http://localhost:3000/profile/delete_picture
+exception: 'NoneType' object has no attribute 'get'
+exception_type: <class 'AttributeError'>
+============================================================
+time: 1710136359.9079242
+request: POST http://localhost:3000/profile/delete_picture
+exception: 'UpdateResult' object has no attribute 'get'
+exception_type: <class 'AttributeError'>
+============================================================
+time: 1710136636.5522451
+request: POST http://localhost:3000/profile/delete_picture
+exception: [WinError 2] The system cannot find the file specified: 'D:/grad_project/grad_pr/backend/file_repository/profile_pictures/None'
+exception_type: <class 'FileNotFoundError'>
+============================================================
+time: 1710177025.6236026
+request: POST http://e682-197-40-149-101.ngrok-free.app/auth/signup
+exception: SSL handshake failed: ac-bxg1mau-shard-00-01.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-bxg1mau-shard-00-00.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-bxg1mau-shard-00-02.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 65ef3a4fd457a3e98b7ec4e9, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-bxg1mau-shard-00-00.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-00.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-bxg1mau-shard-00-01.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-01.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-bxg1mau-shard-00-02.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-02.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+exception_type: <class 'pymongo.errors.ServerSelectionTimeoutError'>
+============================================================
+time: 1710199146.907414
+request: POST http://985b-197-40-149-101.ngrok-free.app/profile/update_password
+exception: 'bytes' object has no attribute 'encode'
+exception_type: <class 'AttributeError'>
+============================================================
+time: 1710199218.1693494
+request: POST http://985b-197-40-149-101.ngrok-free.app/profile/update_password
+exception: 'bytes' object has no attribute 'encode'
+exception_type: <class 'AttributeError'>
+============================================================
+time: 1710199310.8122158
+request: POST http://985b-197-40-149-101.ngrok-free.app/profile/update_password
+exception: 'bytes' object has no attribute 'encode'
+exception_type: <class 'AttributeError'>
+============================================================
+time: 1710199558.3411908
+request: POST http://985b-197-40-149-101.ngrok-free.app/profile/update_password
+exception: 'bytes' object has no attribute 'encode'
+exception_type: <class 'AttributeError'>
+============================================================
+time: 1710200735.1236742
+request: POST http://localhost:3000/profile/delete_account
+exception: 'NoneType' object has no attribute 'get'
+exception_type: <class 'AttributeError'>
+============================================================
+time: 1710201492.673957
+request: POST http://localhost:3000/profile/delete_account
+exception: 'NoneType' object has no attribute 'get'
+exception_type: <class 'AttributeError'>
+============================================================
+time: 1710204835.4708738
+request: POST http://985b-197-40-149-101.ngrok-free.app/image/check_file
+exception: 'NoneType' object has no attribute 'filename'
+exception_type: <class 'AttributeError'>
+============================================================
+time: 1710283561.692177
+request: POST http://localhost:3000/image/check_file?save=true&access=public
+exception: 'NoneType' object has no attribute 'filename'
+exception_type: <class 'AttributeError'>
+============================================================
+time: 1710300982.9730713
+request: POST http://e914-102-191-156-185.ngrok-free.app/image/check_file?save=true&access=public&th=1
+exception: invalid index to scalar variable.
+exception_type: <class 'IndexError'>
+============================================================
+time: 1710301047.4783447
+request: POST http://e914-102-191-156-185.ngrok-free.app/image/check_file?save=true&access=public&th=0
+exception: invalid index to scalar variable.
+exception_type: <class 'IndexError'>
+============================================================
+time: 1710301054.5036085
+request: POST http://e914-102-191-156-185.ngrok-free.app/image/check_file?save=true&access=public&th=-1
+exception: invalid index to scalar variable.
+exception_type: <class 'IndexError'>
+============================================================
+time: 1710324909.0613925
+request: GET http://dbda-2c0f-fc89-10f-3d98-9020-df50-139b-9be0.ngrok-free.app/history/history_data
+exception: SSL handshake failed: ac-bxg1mau-shard-00-00.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-bxg1mau-shard-00-01.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-bxg1mau-shard-00-02.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 65f16eb37e106c242e45ba44, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-bxg1mau-shard-00-00.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-00.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-bxg1mau-shard-00-01.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-01.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-bxg1mau-shard-00-02.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-02.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+exception_type: <class 'pymongo.errors.ServerSelectionTimeoutError'>
+============================================================
+time: 1710325015.8735375
+request: GET http://dbda-2c0f-fc89-10f-3d98-9020-df50-139b-9be0.ngrok-free.app/history/history_data
+exception: SSL handshake failed: ac-bxg1mau-shard-00-00.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-bxg1mau-shard-00-01.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-bxg1mau-shard-00-02.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 65f17cd6746d7ea6f08e3067, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-bxg1mau-shard-00-00.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-00.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-bxg1mau-shard-00-01.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-01.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-bxg1mau-shard-00-02.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-02.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+exception_type: <class 'pymongo.errors.ServerSelectionTimeoutError'>
+============================================================
+time: 1710325124.0073652
+request: GET http://dbda-2c0f-fc89-10f-3d98-9020-df50-139b-9be0.ngrok-free.app/history/history_data
+exception: SSL handshake failed: ac-bxg1mau-shard-00-00.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-bxg1mau-shard-00-01.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-bxg1mau-shard-00-02.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 65f17d2d54e8e46ca6ea7827, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-bxg1mau-shard-00-00.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-00.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-bxg1mau-shard-00-01.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-01.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-bxg1mau-shard-00-02.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-02.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+exception_type: <class 'pymongo.errors.ServerSelectionTimeoutError'>
+============================================================
+time: 1710325186.7666442
+request: GET http://dbda-2c0f-fc89-10f-3d98-9020-df50-139b-9be0.ngrok-free.app/interact/users?search_term=
+exception: SSL handshake failed: ac-bxg1mau-shard-00-00.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-bxg1mau-shard-00-01.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-bxg1mau-shard-00-02.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 65f17d2d54e8e46ca6ea7827, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-bxg1mau-shard-00-00.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-00.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-bxg1mau-shard-00-01.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-01.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-bxg1mau-shard-00-02.qvujii7.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-bxg1mau-shard-00-02.qvujii7.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1129) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+exception_type: <class 'pymongo.errors.ServerSelectionTimeoutError'>
+============================================================
+time: 1710325911.7203455
+request: POST http://dbda-2c0f-fc89-10f-3d98-9020-df50-139b-9be0.ngrok-free.app/profile/update_picture
+exception: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+exception_type: <class 'werkzeug.exceptions.ClientDisconnected'>
+============================================================
+time: 1710547079.1952274
+request: POST http://localhost:3000/connect/send_request?recipient=65f12d2ff7009fd9be1b64bd
+exception: 'Collection' object is not callable. If you meant to call the 'findOne' method on a 'Collection' object it is failing because no such method exists.
+exception_type: <class 'TypeError'>
+============================================================
+time: 1710547142.0897148
+request: POST http://localhost:3000/connect/send_request?recipient=65f12d2ff7009fd9be1b64bd
+exception: 'NoneType' object has no attribute 'count'
+exception_type: <class 'AttributeError'>
+============================================================
+time: 1710547318.5042183
+request: POST http://localhost:3000/connect/send_request?recipient=kjfdifjdijf
+exception: 'kjfdifjdijf' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+exception_type: <class 'bson.errors.InvalidId'>
+============================================================
+time: 1710547484.4047604
+request: POST http://localhost:3000/connect/send_request?recipient=65f12d2ff7009fd9be1b64bd
+exception: 'dict' object has no attribute 'count'
+exception_type: <class 'AttributeError'>
+============================================================
+time: 1710551702.5011966
+request: GET http://localhost:3000/connect/outbound_requests
+exception: PlanExecutor error during aggregation :: caused by :: Unsupported conversion from array to string in $convert with no onError value, full error: {'ok': 0.0, 'errmsg': 'PlanExecutor error during aggregation :: caused by :: Unsupported conversion from array to string in $convert with no onError value', 'code': 241, 'codeName': 'ConversionFailure', '$clusterTime': {'clusterTime': Timestamp(1710551702, 2), 'signature': {'hash': b'\x9a\x88\x1bT\x82\xc9]\xa2y\xc0\xc8\xc8\xa2\x9c\x7f\x15P\x9c\x07L', 'keyId': 7321594719010553861}}, 'operationTime': Timestamp(1710551702, 2)}
+exception_type: <class 'pymongo.errors.OperationFailure'>
+============================================================
+time: 1710551816.0342655
+request: GET http://localhost:3000/connect/outbound_requests
+exception: path option to $unwind stage should be prefixed with a '$': requester, full error: {'ok': 0.0, 'errmsg': "path option to $unwind stage should be prefixed with a '$': requester", 'code': 28818, 'codeName': 'Location28818', '$clusterTime': {'clusterTime': Timestamp(1710551815, 3), 'signature': {'hash': b'\x01\x8d\x19\xcf\xcc\xbcY\x9f\x079\x8d\xa6\x9a^\xe2P\x1c\x19T)', 'keyId': 7321594719010553861}}, 'operationTime': Timestamp(1710551815, 3)}
+exception_type: <class 'pymongo.errors.OperationFailure'>
+============================================================
+time: 1710551898.9462483
+request: GET http://localhost:3000/connect/outbound_requests
+exception: path option to $unwind stage should be prefixed with a '$': recipient, full error: {'ok': 0.0, 'errmsg': "path option to $unwind stage should be prefixed with a '$': recipient", 'code': 28818, 'codeName': 'Location28818', '$clusterTime': {'clusterTime': Timestamp(1710551898, 4), 'signature': {'hash': b'u\xafY\xe8\xcc\xd9\x99u\x04<f\x0b\xed\xdd\t\xb1\x97\xf4(r', 'keyId': 7321594719010553861}}, 'operationTime': Timestamp(1710551898, 4)}
+exception_type: <class 'pymongo.errors.OperationFailure'>
+============================================================
+time: 1710556872.0823863
+request: POST http://localhost:3000/connect/accept_request?requester=65f13022f7009fd9be1b64c5
+exception: update only works with $ operators
+exception_type: <class 'ValueError'>
+============================================================
+time: 1710562281.8502157
+request: GET http://localhost:3000/connect/connections
+exception: unhashable type: 'dict'
+exception_type: <class 'TypeError'>
+============================================================
+time: 1710562369.7577147
+request: GET http://localhost:3000/connect/connections
+exception: unhashable type: 'dict'
+exception_type: <class 'TypeError'>
+============================================================
+time: 1710562463.0778775
+request: GET http://localhost:3000/connect/connections
+exception: Invalid $project :: caused by :: FieldPath field names may not start with '$'. Consider using $getField or $setField., full error: {'ok': 0.0, 'errmsg': "Invalid $project :: caused by :: FieldPath field names may not start with '$'. Consider using $getField or $setField.", 'code': 16410, 'codeName': 'Location16410', '$clusterTime': {'clusterTime': Timestamp(1710562462, 4), 'signature': {'hash': b'\x89\xafw\n\xcfn\xad\xf2\xf1I\x08|e\xe6\xbf\xf3\xa7\xb3)\xdb', 'keyId': 7321594719010553861}}, 'operationTime': Timestamp(1710562462, 4)}
+exception_type: <class 'pymongo.errors.OperationFailure'>
+============================================================
+time: 1710563476.4472353
+request: GET http://localhost:3000/connect/connections
+exception: Invalid $project :: caused by :: Unrecognized expression '$recipient_id', full error: {'ok': 0.0, 'errmsg': "Invalid $project :: caused by :: Unrecognized expression '$recipient_id'", 'code': 168, 'codeName': 'InvalidPipelineOperator', '$clusterTime': {'clusterTime': Timestamp(1710563476, 4), 'signature': {'hash': b'\xfd\x95\x06\x89\x80\xa1h^6\xd3\xf6\xd8\x016\xa8\to\xa7\x83\xb1', 'keyId': 7321594719010553861}}, 'operationTime': Timestamp(1710563476, 4)}
+exception_type: <class 'pymongo.errors.OperationFailure'>
+============================================================
+time: 1710563527.8669488
+request: GET http://localhost:3000/connect/connections
+exception: Invalid $project :: caused by :: Unrecognized expression '$recipient._id', full error: {'ok': 0.0, 'errmsg': "Invalid $project :: caused by :: Unrecognized expression '$recipient._id'", 'code': 168, 'codeName': 'InvalidPipelineOperator', '$clusterTime': {'clusterTime': Timestamp(1710563528, 1), 'signature': {'hash': b'3\x9e\x8bz\xa2`=u\xcd\x0b\xc1ey.\xcd\tbk\xf7\x90', 'keyId': 7321594719010553861}}, 'operationTime': Timestamp(1710563528, 1)}
+exception_type: <class 'pymongo.errors.OperationFailure'>
+============================================================
+time: 1710564658.878878
+request: GET http://localhost:3000/connect/connections
+exception: Invalid $project :: caused by :: Unrecognized parameter to $cond: $toString, full error: {'ok': 0.0, 'errmsg': 'Invalid $project :: caused by :: Unrecognized parameter to $cond: $toString', 'code': 17083, 'codeName': 'Location17083', '$clusterTime': {'clusterTime': Timestamp(1710564658, 5), 'signature': {'hash': b'\xf4\xaf\x81R%j\xe25\x7fG\x89\x87\x00/\xf4\x1f\xf50t\xe0', 'keyId': 7321594719010553861}}, 'operationTime': Timestamp(1710564658, 5)}
+exception_type: <class 'pymongo.errors.OperationFailure'>
+============================================================
+time: 1710567090.0537198
+request: POST http://localhost:3000/auth/login
+exception: 'password'
+exception_type: <class 'KeyError'>
+============================================================
+time: 1710567207.1870227
+request: POST http://localhost:3000/auth/login
+exception: 'password'
+exception_type: <class 'KeyError'>
+============================================================
+time: 1710567236.8420084
+request: POST http://localhost:3000/auth/login
+exception: 'password'
+exception_type: <class 'KeyError'>
+============================================================
+time: 1710567350.6953425
+request: POST http://localhost:3000/auth/login
+exception: 'password'
+exception_type: <class 'KeyError'>
+============================================================
+time: 1710569210.1848638
+request: GET http://localhost:3000/connect/connections
+exception: Invalid $project :: caused by :: Use of undefined variable: requester_id, full error: {'ok': 0.0, 'errmsg': 'Invalid $project :: caused by :: Use of undefined variable: requester_id', 'code': 17276, 'codeName': 'Location17276', '$clusterTime': {'clusterTime': Timestamp(1710569210, 2), 'signature': {'hash': b'\x96\x16q\xebl\xe4\x0eRK\xa0\xda=\xc2+i\xbd\x9a\xc9I2', 'keyId': 7321594719010553861}}, 'operationTime': Timestamp(1710569210, 2)}
+exception_type: <class 'pymongo.errors.OperationFailure'>
+============================================================
+time: 1710635585.4181302
+request: GET http://localhost:3000/connect/relation?target=65f1313cf7009fd9be1b64c9
+exception: __init__() got an unexpected keyword argument 'project'
+exception_type: <class 'TypeError'>
+============================================================
+time: 1710638374.2757711
+request: GET http://localhost:3000/connect/outbound_requests
+exception: Invalid $project :: caused by :: FieldPath field names may not start with '$'. Consider using $getField or $setField., full error: {'ok': 0.0, 'errmsg': "Invalid $project :: caused by :: FieldPath field names may not start with '$'. Consider using $getField or $setField.", 'code': 16410, 'codeName': 'Location16410', '$clusterTime': {'clusterTime': Timestamp(1710638374, 3), 'signature': {'hash': b'\xd0"\xe9\x01\xb9y\xd2ez\x9bN9\xd0rR^\x93G\xac\xbd', 'keyId': 7321594719010553861}}, 'operationTime': Timestamp(1710638374, 3)}
+exception_type: <class 'pymongo.errors.OperationFailure'>
+============================================================
+time: 1710638485.4143386
+request: GET http://localhost:3000/connect/outbound_requests
+exception: Invalid $project :: caused by :: FieldPath field names may not start with '$'. Consider using $getField or $setField., full error: {'ok': 0.0, 'errmsg': "Invalid $project :: caused by :: FieldPath field names may not start with '$'. Consider using $getField or $setField.", 'code': 16410, 'codeName': 'Location16410', '$clusterTime': {'clusterTime': Timestamp(1710638485, 4), 'signature': {'hash': b'*ch\xc76`\x06\xdci=\x19\x14\\\x8d\xa2_\xb2\xaf\xf2}', 'keyId': 7321594719010553861}}, 'operationTime': Timestamp(1710638485, 4)}
+exception_type: <class 'pymongo.errors.OperationFailure'>
+============================================================
